@@ -1,0 +1,494 @@
+.alert-box {
+	background-color: #00e5f5;
+	color: #fff;
+	height: 2em;
+	padding: 1em 0em;
+	text-align: center;
+	font-weight: 700;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	font-size: 10pt;
+}
+
+body {
+	overflow-y: hidden;
+}
+
+.close {
+	background-color: rgba(0,0,0,0);
+	border: none;
+	color: #fff;
+	text-align: right;
+	font-size: 15pt;
+	margin-top: -1.6em;
+	margin-right: -0.4em;
+	cursor: pointer;
+}
+
+.alert-box a, .close a {
+	color: #fff;
+	font-size: 8pt
+}
+
+.alert-box button {
+	float: right;
+}
+
+html, body { 
+	height: 100%; 
+	margin: 0em auto;
+}
+
+body {
+	font-family: 'Quattrocento', serif;
+	color: #333;
+}
+
+#nav {display: none;}
+
+#drawer-toggle { 
+position: absolute; 
+opacity: 0; 
+}
+
+#drawer-toggle-label { 
+-webkit-touch-callout: none; 
+-webkit-user-select: none; 
+-khtml-user-select: none; 
+-moz-user-select: none; 
+-ms-user-select: none; 
+user-select: none; 
+left: 0px; 
+height:50px; 
+width: 50px; 
+display: block; 
+position: fixed; 
+background: rgba(255,255,255,.0); 
+z-index: 5001; 
+} 
+
+/* adds our "hamburger" menu icon */ 
+
+#drawer-toggle-label:before { 
+content: ''; 
+display: block; 
+position: absolute; 
+height: 2px; 
+width: 24px; 
+background: #333; 
+left: 13px; 
+top: 18px; 
+box-shadow: 0 6px 0 #333, 0 12px 0 #333; 
+} 
+
+header { 
+width: 100%; 
+position: fixed; 
+left: 0px;
+color: #FFF;
+background: #FFF; 
+padding: 10px 10px 10px 50px; 
+font-size: 30px; 
+line-height: 30px; 
+z-index: 5;
+border-bottom: solid 3px #eee; 
+z-index: 5000;
+}
+
+/* drawer menu pane - note the 0px width */ 
+
+#drawer { 
+position: absolute; 
+top: 0; 
+left: -350px; 
+height: 100%; 
+width: 225px; 
+background: #FFF; 
+overflow-x: hidden; 
+overflow-y: hidden; 
+padding: 20px 40px 20px 0px; 
+z-index: 5000;
+color: #333;
+border-right: 3px solid #ddd;
+} 
+
+/* actual page content pane */ 
+
+#page-content {  
+width: 100%; 
+height: calc(100%); 
+overflow-x:hidden; 
+overflow-y:scroll; 
+-webkit-overflow-scrolling: touch; 
+}
+
+/* checked styles (menu open state) */ 
+
+#drawer-toggle:checked ~ #drawer-toggle-label { 
+height: 100%; 
+width: calc(100% - 265px); 
+background: rgba(255,255,255,.4); 
+} 
+
+#drawer-toggle:checked ~ #drawer-toggle-label, 
+#drawer-toggle:checked ~ header { 
+left: 265px; 
+} 
+
+#drawer-toggle:checked ~ #drawer { 
+left: 0px; 
+} 
+
+
+/* Menu item styles */ 
+
+#drawer ul  { 
+list-style-type:none; 
+} 
+
+#drawer ul a { 
+display:block;  
+color:#333; 
+border-bottom: solid 2px rgba(0, 0, 0, 0.3);
+padding: 2em 3em 0em 3em;
+text-align: center;
+} 
+
+h1 {font-family: 'Oswald', sans-serif;}
+
+a {
+	text-decoration: none;
+	color: #333;
+	font-size: 13pt;
+	font-weight: 700;
+}
+
+a:hover {opacity: 0.7;}
+
+footer {
+	font-family: Arial, sans-serif;
+	background-color: #111;
+	color: #fff;
+	text-align: center;
+	font-weight: 700;
+	height: 2em;
+	padding-top: 1.2em;
+	clear:both;
+	font-size: 10pt;
+	margin-top: 3em;
+}
+
+textarea {resize: none;}
+
+form {text-align: center;}
+
+#maps iframe {
+	margin: 0em auto;
+	display: block;
+	width: 60%;
+	height: 400px;
+	margin-bottom: 4em;
+}
+
+#facebook iframe {
+	display: block;
+	height: 400px;
+	margin: 3em auto;
+	width: 300px;
+}	
+
+input[type=text], textarea {
+    border: 1px solid #333;
+    border-radius: 2px;
+}
+
+input[type=text] {padding: 4px 0px;}
+
+a:hover, #buttonSubmit:hover, #buttonReset:hover, #drawer, #drawer-toggle, #drawer-toggle-label, header, .links img:hover, .alert-box, #nav  {
+-webkit-transition: ease-in-out .20s; 
+-moz-transition: ease-in-out .20s; 
+-o-transition:  ease-in-out .20s; 
+transition: ease-in-out .20s; 
+}
+
+
+#nav ul, #nav li {
+	display: inline;
+	list-style-type: none;
+	padding: 0em 3em;
+	text-align: center;
+}
+
+#nav {
+	width: 100%;
+	position: fixed;
+	text-align: center;
+	margin: 0em auto;
+	height: 3.5em;
+	position: fixed;
+	padding-top: 4px;
+}
+
+.background {
+	background-image: url('../hero.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: relative;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	min-height: 55em;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.background img {
+	margin-top: 10em;
+	height: 250px;
+	width: 250px;
+	margin-left: -0.2em;
+}
+
+#about {
+	min-height: 24em;
+	margin-top: 5em;
+	width: 100%;
+}
+
+#gallery {
+	background-color: #333;
+	padding-top: 2em;
+	min-height: 24em;
+	color: #fff;
+	width: 100%;
+}
+
+#gallery a, #gallery h1, #gallery p {
+	color: #fff;
+	margin-top: 1.5em;
+}
+
+#contact {
+	min-height: 36em; 
+	margin-top: 5em;
+	padding-top: 2em;
+	width: 100%;
+}
+
+#buttonSubmit, #buttonReset {
+	color: #333;
+	margin-top: 1em;
+	width: 9em;
+	height: 3em;
+	border: solid 2px #333;
+	border-radius: 2px;
+	background-color: rgba(0,0,0,0);
+	cursor: pointer;
+	font-family: 'Quattrocento', serif;
+	font-size: 11pt;
+	-webkit-appearance: none;
+}
+
+#buttonSubmit:hover, #buttonReset:hover {
+	color: #fff;
+	border: solid 2px #333;
+	background-color: rgb(51,51,51);
+	cursor: pointer;
+}
+
+#container {
+	text-align: center;
+	margin: 6em 5% 0em 5%;
+}
+
+#container h1 {
+	font-size: 40pt;
+}
+
+#container h2 {
+	margin-top: 2em;
+	font-size: 20pt;
+}
+
+#container h3 {
+	margin-top: 2em;
+}
+
+#container form {
+	margin-bottom: 3em;
+}
+
+#container img {
+	width: 60%;
+	height: 50%;
+	display: block;
+	margin: 0em auto;
+	margin-top: 5em;
+	border: solid 3px #333;
+}
+.left {
+	width: 90%;
+	padding: 0em 5%;
+	display: block;
+}
+
+.right {
+	width: 90%;
+	padding: 0em 5%;
+	display: block;
+}
+
+.left img, .right img{
+	display: none;
+	margin: 0 auto;
+	height: 180px;
+	width: 180px;
+}
+
+.links img, .links a {
+	 height: 60px; 
+	 width: 60px;
+	 display: inline;
+	 padding: 0em 0.5em;
+	 margin-top: 1em;
+	 opacity: 0.8;
+}
+
+.links img:hover, .links a:hover {
+	 opacity: 1;
+	 cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:600px) {
+
+.close, .close a {
+	font-size: 18pt;
+}
+
+.alert-box, .alert-box a  {
+	font-size: 10pt;
+}
+
+.close {
+	margin-top: -1.2em;
+	margin-right: 0.5em;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:850px) {
+
+.close, .close a {
+	font-size: 20pt;
+}
+
+.close {
+	margin-top: -1.4em;
+}
+
+.alert-box, .alert-box a  {
+	font-size: 12pt;
+}
+
+form {
+	display: inline-block;
+	text-align: left;
+}
+
+iframe {
+	width: 60%;
+	height: 350px;
+}
+
+#menu {
+	display: none;
+}
+
+#nav {
+	display: inline;
+	z-index: 1000;
+}
+
+
+#about {
+	min-height: 26em;
+	margin-top: 8em;
+}
+
+#gallery {
+	padding-top: 8em;
+	min-height: 28em;
+	margin-top: 2em;
+}
+
+.background img {
+	height: 350px;
+	width: 350px;
+	margin-left: -1em;
+	margin-top: 15em;
+}
+
+.left {
+	float: left;
+	width: 38%;
+}
+
+.right {
+	float: left;
+	width: 38%;
+}
+
+.left img {
+	padding-left: 35%;
+}
+
+.right img {
+	padding-right: 35%;
+}
+
+.left form {
+	padding-left: 50%;
+}
+
+.left img, .right img{
+	display: block;
+	height: 325px;
+	width: 325px;
+}
+
+#container {
+	margin: 6em 15% 0em 15%;
+}
+
+#contact .links {
+	padding-right: 7em;
+}
+
+#container img {
+	width: 40%;
+}
+}

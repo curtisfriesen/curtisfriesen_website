@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Contact // Live Rustic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="live rustic, brantford, oliveah friesen, rustic, country, live rustic website">
+    <meta name="author" content="Curtis Friesen">
+    <meta name="description" content="Live Rustic Brantford">
+
+    <!--MEDIA QUERIES USING LINK & MEDIA ATTRIBUTE stylesheets -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
+
+    <!-- Favicon and Icons -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+</head>
+
+<body>
+
+
+    <div id="menu">
+    <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+            <label for="drawer-toggle" id="drawer-toggle-label"></label>
+            <header>.</header>
+        <nav id="drawer">
+            <ul><!-- un ordered list for nav bar -->
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id="nav">
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <img src="images/logosmall.png" height="50px" width="50px" style="vertical-align:middle;margin-left: 5px">
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+<div id="page-content">
+    <div id="container">
+        <h1>CONTACT</h1>
+            <p>Brantford, Ontario</p>
+
+            <div id="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93150.19700162005!2d-80.34410590481316!3d43.14771243729513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c65e278ea730f%3A0x353da5a5a466f9e0!2sBrantford%2C+ON!5e0!3m2!1sen!2sca!4v1464662226451" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <h2>E-mail Form</h2>
+            <form id="emailForm" method="post" action="serverCode/contact_form.php">
+                Name:<br>
+                <input type="text" name="name" placeholder="First And Last Name" size="34" required><br><br>
+                E-mail:<br>
+                <input type="text" name="email" size="34" placeholder="youremail@example.com" required><br><br>
+                Subject:<br>
+                <input type="text" name="subject" size="34" required><br><br>
+                Message:<br>
+                <textarea name="message" rows="14" cols="35" required></textarea><br>
+
+                <input type="submit" name="btnSubmit" value="SEND" id="buttonSubmit">
+                <input type="reset" name="btnReset" value="RESET" id="buttonReset">
+            </form>
+
+        </div>
+            <div class="links" style="text-align:center;">
+                <p>
+                <a href="https://www.facebook.com/liverusticbrantford/" target="_blank"><img src="images/facebook.png" height="100px" width="100px"></a>
+                <a href="https://www.instagram.com/liverusticbrantford/" target="_blank"><img src="images/instagram.png" height="100px" width="100px"></a>
+                </p>
+            </div>
+
+        <div id="facebook">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fliverusticbrantford&tabs=timeline&width=300px&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=104298318087" style="border:solid 2px #000;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
+
+        <div id="container">
+            <h2>Website Designer</h2>
+            <h3>Curtis Friesen</h3>
+            <p>E-mail<br><a href="mailto:thecurtisfriesen@gmail.com">thecurtisfriesen@gmail.com</a><br><br>
+            Website<br><a href="http://curtisfriesen.ca">curtisfriesen.ca</a></p>
+        </div>
+
+    <footer>Live Rustic &copy Brantford, Ontario</footer>
+</div>
+
+    <script src="serverCode/jquery-1.12.2.min.js"></script>
+    <script src="serverCode/close.js"></script>
+    <script src="serverCode/scroll.js"></script>
+</body>
+</html>
