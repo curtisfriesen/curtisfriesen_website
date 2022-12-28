@@ -1,2 +1,4 @@
 # Curtis Friesen
-Portfolio Website
+⌨️ typed.js
+🔥 Firebase hosting
+🤖 GitHub 
