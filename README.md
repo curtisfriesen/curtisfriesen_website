@@ -1,4 +1,4 @@
 # Curtis Friesen
-⌨️ typed.js
-🔥 Firebase hosting
-🤖 GitHub 
+⌨️ typed.js \n
+🔥 Firebase hosting \n
+🤖 GitHub \n
