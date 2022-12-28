@@ -1,2 +1,2 @@
-# curtisfriesen_website
+# Curtis Friesen
 Portfolio Website
