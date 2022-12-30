@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans:300,400,900|Montserrat:300,400,700&display=swap);
 
 :root {
-    --cf-theme-primary: #001241;
+    --cf-theme-primary: #011240;
     --cf-theme-accent: #eb4200;
     --cf-theme-white: #fff;
     --cf-theme-dark-grey: #111;
@@ -148,6 +148,7 @@ header nav ul li a{
 	padding: 0 16px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	text-shadow: 0px 0px 20px #111;
 }
 
 header nav ul li a:hover{
@@ -324,7 +325,7 @@ main {
 
 #hero {
 	background-repeat: no-repeat;
-	background-position: 61% center;
+	background-position: bottom center;
 	background-size: cover;
 	min-height: 100vh;
 	width: 100%;
@@ -341,7 +342,7 @@ main {
 }
 
 #hero h1 {
-	font-size: 80px;
+	font-size: clamp(5rem, 5vw, 8rem);
 }
 
 #hero hr {
@@ -352,7 +353,7 @@ main {
 
 #hero .typing-element {
 	display: inline; 
-	font-size: 15pt;
+	font-size: clamp(1.4rem, 1vw, 2rem);
 }
 
 #hero.home-page {background-image: url('../images/home-hero.webp');}
@@ -756,10 +757,6 @@ section#misc img {
 	main {
 		background-size: auto;
 	}
-
-	#hero h1 {
-		font-size: 65px;
-	}
 	
 	#portfolio .skills.grid-col-3 {
 		align-items: flex-start;
@@ -895,10 +892,6 @@ section#misc img {
 
 	header nav .menu-btn {
 		display: block;
-	}
-	
-	#hero h1 {
-		font-size: 55px;
 	}
 
 	#blog-post {
