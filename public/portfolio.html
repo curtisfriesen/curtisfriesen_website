@@ -22,7 +22,6 @@
     <meta name="twitter:image" content="https://curtisfriesen.ca/images/BlueOrange_on_White.jpg" />
 
     <!--MEDIA QUERIES USING LINK & MEDIA ATTRIBUTE stylesheets -->
-    <link href="css/animations.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/915fadb1cc.js" crossorigin="anonymous" async></script>
 
@@ -48,8 +47,8 @@
 
 <body id="portfolio-page">
     <div id="clicker"></div>
-    <header class="animatedParent animateOnce">
-        <div class="wrapper animated fadeInDownShort">
+    <header>
+        <div class="wrapper">
             <nav>
                 <a href="https://curtisfriesen.ca">
                     <img src="images/logo-nav.webp" alt="CFLogo" title="CFLogo" class="navLogo">
@@ -76,8 +75,8 @@
         </div>
     </header>
 
-    <section id="hero" class="animatedParent animateOnce portfolio-page">
-        <div class="wrapper  animated fadeInDownShort delay-250">
+    <section id="hero" class="portfolio-page">
+        <div class="wrapper">
             <h1>Portfolio</h1>
             <hr/>
             <div class="typing-element"></div>
@@ -85,11 +84,11 @@
     </section>
 
 
-    <section id="websites" class="animatedParent animateOnce" data-sequence="100" data-appear-top-offset='-200'>
+    <section id="websites">
         <div class="wrapper">
             <h2>Website Designs</h2>
             <div class="grid-col-3">
-                <div class="animated fadeInDownShort" data-id="3">
+                <div>
                     <a href="https://purelifedigital.com/" target="_blank">
                         <img src="images/portfolio/purelifedigital.webp" title="Pure Life Digital Marketing" alt="Pure Life Digital Marketing website">
                         <p>
@@ -99,7 +98,7 @@
                         </p>
                     </a>
                 </div>
-                <div class="animated fadeInDownShort" data-id="5">
+                <div>
                     <a href="http://beerbase.ca/" target="_blank">
                         <img src="images/portfolio/beerbase.webp" title="Pinegrove Plumbing" alt="Pinegrove Plumbing website">
                         <p>
@@ -109,7 +108,7 @@
                         </p>
                     </a>
                 </div>
-                <div class="animated fadeInDownShort" data-id="6">
+                <div>
                     <a href="https://www.tradesplaybook.com/" target="_blank">
                         <img src="images/portfolio/toolsofthetradesplaybook.jpg">
                         <p>
@@ -128,43 +127,40 @@
         <div class="wrapper small">
             <h2>Logos</h2>
             <div class="grid-col-2">
-                <div class="animatedParent animateOnce">
-                    <img class="animated fadeInDownShort" src="images/portfolio/logos/medella_logo.jpg" alt="medella logo">
+                <div>
+                    <img  src="images/portfolio/logos/medella_logo.jpg" alt="medella logo">
                 </div>
-                <div class="animatedParent animateOnce">
-                    <img class="animated fadeInDownShort" src="images/portfolio/logos/jnan.jpg" alt="jnan stream logo">
+                <div>
+                    <img  src="images/portfolio/logos/jnan.jpg" alt="jnan stream logo">
                 </div>
-                <div class="animatedParent animateOnce">
-                    <img class="animated fadeInDownShort" src="images/portfolio/logos/jessfootcare.jpg" alt="jess footcare logo">
+                <div>
+                    <img  src="images/portfolio/logos/jessfootcare.jpg" alt="jess footcare logo">
                 </div>
-                <div class="animatedParent animateOnce">
-                    <img class="animated fadeInDownShort" src="images/portfolio/logos/freezinbrewingco.jpg" alt="freezin brewing co.">
+                <div>
+                    <img  src="images/portfolio/logos/freezinbrewingco.jpg" alt="freezin brewing co.">
                 </div>
-                <div class="animatedParent animateOnce">
-                    <img class="animated fadeInDownShort delay-250" src="images/portfolio/logos/gibbledgoose.jpg" alt="gibbled goose">
+                <div>
+                    <img src="images/portfolio/logos/gibbledgoose.jpg" alt="gibbled goose">
                 </div>
-                <div class="animatedParent animateOnce">
-                    <img class="animated fadeInDownShort delay-250" src="images/portfolio/logos/royalmetalworks.jpg" alt="royal metalworks logo">
+                <div>
+                    <img src="images/portfolio/logos/royalmetalworks.jpg" alt="royal metalworks logo">
                 </div>
             </div>
         </div>
     </section>
 
     <section id="misc">
-        <div class="wrapper medium animatedParent animateOnce" data-sequence="100" data-appear-top-offset='-200'>
+        <div class="wrapper medium">
             <h2>Miscellaneous</h2>
             <div class="grid-col-2">
-                <div class="animated fadeInUpShort" data-id="1">
+                <div>
                     <img src="images/portfolio/misc/GDJ_EPCover.jpg">
                 </div>
-                <div class="animated fadeInUpShort" data-id="2">
+                <div>
                     <img src="images/portfolio/misc/gibbledstpatties.png">
                 </div>
             </div>
-            <div class="animated fadeInUpShort" data-id="4">
-                <img src="images/portfolio/misc/BU-Esports-Banner.webp" class="large">
-            </div>
-            <div class="animated fadeInUpShort" data-id="5" style="padding-top: 30px">
+            <divb style="padding-top: 30px">
                 <img src="images/portfolio/misc/3canmockup_freezinbrewing.webp" class="large" style="max-width: 750px">
             </div>
         </div>
@@ -206,7 +202,6 @@
     <!-- Addon libraries -->
     <script src="js/addons/jquery-1.12.2.min.js"></script>
     <script src="js/addons/typed.js"></script>
-    <script src="js/addons/css3-animate-it.js"></script>
 
     <!-- Firebase libraries -->
     <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase.js"></script>
