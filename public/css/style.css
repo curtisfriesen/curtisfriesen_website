@@ -403,7 +403,7 @@ main {
 #about {
 	position: relative;
 	z-index: 10;
-	background: transparent;
+	background: linear-gradient(to bottom, #011243, var(--cf-theme-primary)) !important; /* this fix is here because the hero image colour doesn't match the web colour. probably some CMYK issue */
 }
 
 #about img {
