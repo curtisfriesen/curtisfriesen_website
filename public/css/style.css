@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans:300,400,900|Montserrat:300,400,700&display=swap);
 
 :root {
-    --cf-theme-primary: #001241;
-    --cf-theme-accent: #eb4200;
+    --cf-theme-primary: #1B3A57;
+    --cf-theme-accent: #931B30;
     --cf-theme-white: #fff;
     --cf-theme-dark-grey: #111;
 }
@@ -15,10 +15,10 @@
 }
 
 ::selection {
-  background: #eb4200;
+  background: var(--cf-theme-accent);
 }
 ::-moz-selection {
-  background: #eb4200;
+  background:  var(--cf-theme-accent);
 }
 
 /* for animations */
@@ -312,9 +312,6 @@ header .wrapper {
 .btn:hover {
 	background-color: var(--cf-theme-primary);
 	color: var(--cf-theme-white) !important;
-	transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
 }
 
 .btn-blue:hover {
@@ -333,7 +330,7 @@ header .wrapper {
 
 /* section styles */
 main {
-	background-image: url('../images/body-image.webp');
+	background-image: url('../images/body-image.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -371,9 +368,8 @@ main {
 	font-size: 1.6rem;
 }
 
-#hero.home-page {background-image: url('../images/home-hero.webp');}
-#hero.portfolio-page {background-image: url('../images/port-hero.jpg');}
-#hero.blog-page {background-image: url('../images/blog-hero.jpg');}
+#hero.home-page {background-image: url('../images/home_hero.jpg');}
+#hero.portfolio-page {background-image: url('../images/portfolio_hero.jpg');}
 
 .typed-cursor{
 	display: inline;
@@ -403,7 +399,6 @@ main {
 #about {
 	position: relative;
 	z-index: 10;
-	background: linear-gradient(to bottom, #011243, var(--cf-theme-primary)) !important; /* this fix is here because the hero image colour doesn't match the web colour. probably some CMYK issue */
 }
 
 #about img {
@@ -418,6 +413,15 @@ main {
 	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.25);
 	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.25);
 	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.25);
+}
+
+#about .skills {
+	margin: 35px auto 0;
+	max-width: 700px;
+}
+
+#about .skills i {
+	font-size: 2.4rem;
 }
 
 #portfolio {
@@ -459,6 +463,7 @@ main {
 	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.25);
 	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.25);
 	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.25);
+	border-radius: 15px;
 }
 
 #portfolio .image-container a label{
@@ -509,9 +514,10 @@ main {
 	width: 90vw;
 	max-width: 1400px;
 	padding-bottom: 10px;
-	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.25);
-	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.25);
-	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.25);
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.6);
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.6);
+	border-radius: 25px;
 }
 
 #contact p {
@@ -607,6 +613,20 @@ footer.alternate a{
 .grid-col-3 {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	padding: 30px 0;
+	align-items: flex-start;
+}
+
+.grid-col-5 {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	padding: 30px 0;
+	align-items: flex-start;
+}
+
+.grid-col-8 {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
 	padding: 30px 0;
 	align-items: flex-start;
 }
@@ -916,6 +936,10 @@ section#misc img {
 		font-size: 5.5rem;
 	}
 
+	#about .skills i {
+		font-size: 2.4rem;
+	}
+
 	.grid-col-2, .grid-col-3 {
 		grid-template-columns: 1fr;
 		grid-gap: 30px;
@@ -924,6 +948,10 @@ section#misc img {
 
 	.grid-col-2 img, .grid-col-3 img, #blog-list .blog-image {
 		width: 70%;
+	}
+
+	.grid-col-8 {
+		grid-template-columns: repeat(4, 1fr);
 	}
 
 	.text {
