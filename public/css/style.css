@@ -486,7 +486,8 @@ main {
 }
 
 #portfolio .image-container a:hover > img {
-	opacity: 0.1;
+	opacity: 0.2;
+	filter: grayscale();
 }
 
 #portfolio .image-container a:hover > label {
@@ -898,8 +899,8 @@ section#misc img {
 	}
 
 	header nav a img{
-		width: 70px;
-		height: 70px;
+		width: 65px;
+		height: 65px;
 		margin: 0 10px;
 	}
 
