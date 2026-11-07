@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "curtisfriesenwebsite"
-  }
+  },
+  "targets": {
+    "curtisfriesenwebsite": {
+      "hosting": {
+        "website": [
+          "curtisfriesenwebsite"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
