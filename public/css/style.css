@@ -258,7 +258,7 @@ header nav a img{
 .wrapper {
 	max-width: 1400px;
 	margin: 0 auto;
-	padding: 80px 20px;
+	padding: 70px 20px;
 }
 
 .wrapper.medium {
@@ -577,11 +577,11 @@ footer i{
 	font-size: 21pt !important;
 }
 
-footer a.mail:hover {color: green;}
-footer a.twitter:hover {color: #000;}
-footer a.instagram:hover {color: #bc2a8d;}
+footer a.mail:hover {color: var(--cf-theme-accent);}
 footer a.linkedin:hover {color: #007bb6;}
-footer a.pin:hover {color: #a30000;}
+footer a.instagram:hover {color: #bc2a8d;}
+footer a.github:hover {color: #2dba4e;}
+footer a.x:hover {color: #000;}
 
 footer i.fa{
 	position: absolute;
